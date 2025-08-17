@@ -12,9 +12,9 @@ const Navbar = () => {
     return (
         <>
             <nav className='fixed top-4 left-0 right-0 z-50 m-2'>
-                <div className='text-neutral-500 bg-black/60 backdrop-blur-md max-w-7xl mx-auto px-4 py-3
+                <div className='text-neutral-500 bg-black/60 backdrop-blur-md max-w-7xl mx-auto px-2 py-1
                 flex justify-between items-center rounded-xl border border-neutral-800'>
-                    <img src={Areas} width={80} height={10}/>
+                    <img src={Areas} width={60} height={15}/>
 
                     {/* Left Button */}
                     <div className='hidden md:flex space-x-6'>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     {/* Right Button */}
                     <div className='hidden md:flex space-x-4 items-center'>
                         <a href="#" className='hover:text-neutral-200'>Login</a>
-                        <a href="#" className='border border-neutral-700 text-white py-2 px-4 rounded-lg hover:text-neutral-700 transition'>Get a demo</a>
+                        <a href="#" className='border border-neutral-700 text-white py-2 px-2 rounded-lg hover:text-neutral-700 transition'>Get a demo</a>
                         <a href="#" className='border bg-blue-600  text-white py-2 px-4 rounded-lg hover:bg-blue-400 transition'>Start Free Trial</a>
                     </div>
 
@@ -50,8 +50,8 @@ const Navbar = () => {
                 <div className='md:hidden fixed inset-0 z-40 bg-black/90 backdrop-blur-md'>
                     <div className='flex flex-col h-full'>
                         {/* Top section with logo and close button */}
-                        <div className='flex justify-between items-center p-4 mt-4'>
-                            <img src={Areas} width={90} height={15}/>
+                        <div className='flex justify-between items-center px-2 py-1 mt-4'>
+                            <img src={Areas} width={60} height={15}/>
                             <button onClick={toggleMenu} className='text-white focus:outline-none'>
                                 <RiCloseFill size={24}/>
                             </button>

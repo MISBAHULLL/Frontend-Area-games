@@ -26,8 +26,8 @@ import {
 } from "@remixicon/react";
 
 export const HERO_CONTENT = {
-  badgeText: "🚀 New Feature: Stream Analytics 2.0 Now Live!",
-  mainHeading: "The Ultimate \n Streaming Toolkit+",
+  badgeText: "🚀 New Feature:  Gaming 2.0 Play Now!",
+  mainHeading: "The Ultimate \n Gaming Toolkit+",
   subHeading:
     "Optimize your streams, track real-time analytics, and engage your audience effortlessly—all in one place. Perfect for Twitch, YouTube, and Facebook streamers.",
   callToAction: {

@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import logo from '../assets/logo.png';
+import Areas from '../assets/areas.png';
 import { RiCloseFill, RiMenu3Line } from '@remixicon/react';
 
 
@@ -14,7 +14,7 @@ const Navbar = () => {
             <nav className='fixed top-4 left-0 right-0 z-50 m-2'>
                 <div className='text-neutral-500 bg-black/60 backdrop-blur-md max-w-7xl mx-auto px-4 py-3
                 flex justify-between items-center rounded-xl border border-neutral-800'>
-                    <img src={logo} width={120} height={24}/>
+                    <img src={Areas} width={80} height={10}/>
 
                     {/* Left Button */}
                     <div className='hidden md:flex space-x-6'>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <div className='flex flex-col h-full'>
                         {/* Top section with logo and close button */}
                         <div className='flex justify-between items-center p-4 mt-4'>
-                            <img src={logo} width={120} height={24}/>
+                            <img src={Areas} width={90} height={15}/>
                             <button onClick={toggleMenu} className='text-white focus:outline-none'>
                                 <RiCloseFill size={24}/>
                             </button>

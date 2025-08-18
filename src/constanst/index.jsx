@@ -1,7 +1,7 @@
-import StreamLabsLogo from "../assets/streamlabs-logo.png";
-import BroadcastlyLogo from "../assets/broadcastly-logo.png";
-import LiveStreamerLogo from "../assets/livestreamer-logo.png";
-import CloudCastLogo from "../assets/cloudcast-logo.png";
+import KickLogo from "../assets/KickH.jpg";
+import TrovoLogo from "../assets/trovo.png";
+import SteamLogo from "../assets/steam.jpg";
+import TwitchLogo from "../assets/twitch.jpg";
 
 import streamImage from "../assets/streamer.jpeg";
 import chart from "../assets/chart.png";
@@ -38,10 +38,10 @@ export const HERO_CONTENT = {
 };
 
 export const BRAND_LOGOS = [
-  { src: StreamLabsLogo, alt: "StreamLabs" },
-  { src: BroadcastlyLogo, alt: "Broadcastly" },
-  { src: LiveStreamerLogo, alt: "LiveStreamer" },
-  { src: CloudCastLogo, alt: "CloudCast" },
+  { src: KickLogo, alt: "Kick" },
+  { src: TrovoLogo, alt: "Trovo" },
+  { src: SteamLogo, alt: "Steam" },
+  { src: TwitchLogo, alt: "Twitch" },
 ];
 
 export const HOW_IT_WORKS_CONTENT = {

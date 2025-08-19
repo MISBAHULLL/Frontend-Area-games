@@ -14,7 +14,10 @@ const Works = () => {
     return (
         <section id="works" className="-mt-25">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="text-center mb-12 border-t border-neutral-800">
+                <motion.div 
+                initial={{opacity: 0, y: -20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.5, delay: 0.2}}  className="text-center mb-12 border-t border-neutral-800">
                     <h2 className="text-3xl lg:text-5xl mt-2 -tracking-tighter bg-gradient-to-t
                     from-neutral-50 via-neutral-300 to-neutral-300 bg-clip-text text-transparent">
                         {HOW_IT_WORKS_CONTENT.sectionTitle}
@@ -22,9 +25,18 @@ const Works = () => {
                     <p className="mt-4 text-neutral-400 max-w-xl mx-auto">
                         {HOW_IT_WORKS_CONTENT.sectionDescription}
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={{
+                    visible: {
+                        transition: {
+                            staggerChildren: 0.2,
+                        }
+                    }
+                }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {HOW_IT_WORKS_CONTENT.steps.map((step, index) => (
                         <div key={index} className="bg-neutral-900 p-6 rounded-xl shadow-lg flex flex-col justify-between">
                             <div>
@@ -38,19 +50,34 @@ const Works = () => {
 
                             {step.platforms &&(
                                 <div className="flex justify-between items-center mt-4">
-                                    <div className="flex space-x-2">
-                        {step.platforms.map((platform, platformIndex) => (
-                            <img className="h-60 w-60 border-2 border-gray-700 rounded-lg"
+                                    <div className="flex -space-x-2">
+                            {step.platforms.map((platform, platformIndex) => (
+                            <img className="h-8 w-8 rounded-full border-2 border-black"
                             key={platformIndex}
                                 src={platform}
                                 alt={`Platform Streaming ${platformIndex + 1}`}
                             />
+                            ))}
+                        </div>                                
+                        </div>                    
+                        )}
+                            {step.user &&(
+                                <div className="flex justify-between items-center mt-4">
+                                    <div className="flex -space-x-2">
+                        {step.user.map((user, userIndex) => (
+                            <img className="h-8 w-8 rounded-full border-2 border-black"
+                            key={userIndex}
+                                src={user}
+                                alt={`Platform Streaming ${userIndex + 1}`}
+                            />
                         ))}
-                    </div>                                </div>
-                            )}
+                    </div>                                
+                    </div>                    
+                        )}
+
                         </div>
                     ))}
-                </div>
+                </motion.div>
 
             </div>
         </section>

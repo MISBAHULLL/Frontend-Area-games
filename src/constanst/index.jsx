@@ -15,8 +15,14 @@ import trovoStream from "../assets/trovoStream.jpg";
 import twitchStream from "../assets/twitchStream.jpg";
 import youtubeStream from "../assets/YoutubeStream.png";
 import tiktokStream from "../assets/tiktokStream.png";
-/* import user5 from "../assets/user5.jpeg";
-import user6 from "../assets/user6.jpeg"; */
+
+import usr1 from "../assets/usr1.jpg";
+import usr2 from "../assets/usr2.jpg";
+import usr3 from "../assets/usr3.jpg";
+import usr4 from "../assets/usr4.jpg";
+import usr5 from "../assets/usr5.jpg";
+import usr6 from "../assets/usr6.jpg";
+
 
 import {
   RiBarChart2Line,
@@ -75,6 +81,7 @@ export const HOW_IT_WORKS_CONTENT = {
         "Adjust your webcam, microphone, and background to look more professional.",
       imageSrc: streamGame,
       imageAlt: "Setreaming",
+      user: [usr1, usr2, usr3, usr4, usr5, usr6],
     },
     {
       title: "Real-Time Interaction",

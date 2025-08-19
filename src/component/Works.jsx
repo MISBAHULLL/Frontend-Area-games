@@ -1,9 +1,16 @@
-import { div } from "framer-motion/client";
 import { HOW_IT_WORKS_CONTENT } from "../constanst";
-// import { section } from "framer-motion/client";
+import { motion } from 'framer-motion';
 
 
 const Works = () => {
+    const stepContainer = {
+        hidden: { opacity: 0, y: 50 },
+        visible: (i) => ({
+            opacity: 1,
+            y: 0,
+            transition: { delay: i * 0.2, duration: 0.5, ease: "easeOut" }
+        })
+    }
     return (
         <section id="works" className="-mt-25">
             <div className="max-w-7xl mx-auto px-4">
@@ -24,6 +31,23 @@ const Works = () => {
                                 <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
                                 <p className="text-neutral-400 mb-4">{step.description}</p>
                             </div>
+                            <div className="felx justify-center">
+                                <img src={step.imageSrc}
+                                    alt={step.imageAlt} className="w-100 h-70"></img>
+                            </div>
+
+                            {step.platforms &&(
+                                <div className="flex justify-between items-center mt-4">
+                                    <div className="flex space-x-2">
+                        {step.platforms.map((platform, platformIndex) => (
+                            <img className="h-60 w-60 border-2 border-gray-700 rounded-lg"
+                            key={platformIndex}
+                                src={platform}
+                                alt={`Platform Streaming ${platformIndex + 1}`}
+                            />
+                        ))}
+                    </div>                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

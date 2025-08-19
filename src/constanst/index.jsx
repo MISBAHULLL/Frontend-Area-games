@@ -2,19 +2,21 @@ import KickLogo from "../assets/KickH.jpg";
 import TrovoLogo from "../assets/trovo.png";
 import SteamLogo from "../assets/steam.jpg";
 import TwitchLogo from "../assets/twitch.jpg";
+import youtube from "../assets/youtube.png";
+import tiktok from "../assets/tiktok.png";
 
-import streamImage from "../assets/streamer.jpeg";
-import chart from "../assets/chart.png";
-import optimize from "../assets/optimize.jpeg";
-import audienceEngagementImage from "../assets/audience.jpeg";
-import monetizeImage from "../assets/monetize.jpeg";
-import automationImage from "../assets/automation.jpeg";
-import user1 from "../assets/user1.jpeg";
-import user2 from "../assets/user2.jpeg";
-import user3 from "../assets/user3.jpeg";
-import user4 from "../assets/user4.jpeg";
-import user5 from "../assets/user5.jpeg";
-import user6 from "../assets/user6.jpeg";
+import streamImage from "../assets/kickStream.jpg";
+import streamGame from "../assets/streamGame.jpg";
+import chat from "../assets/chat.jpg";
+import saweria from "../assets/saweria.jpg";
+import banner from "../assets/banner.jpg";
+import like from "../assets/like.jpg"; 
+import trovoStream from "../assets/trovoStream.jpg";
+import twitchStream from "../assets/twitchStream.jpg";
+import youtubeStream from "../assets/YoutubeStream.png";
+import tiktokStream from "../assets/tiktokStream.png";
+/* import user5 from "../assets/user5.jpeg";
+import user6 from "../assets/user6.jpeg"; */
 
 import {
   RiBarChart2Line,
@@ -26,10 +28,10 @@ import {
 } from "@remixicon/react";
 
 export const HERO_CONTENT = {
-  badgeText: "🚀 New Feature:  Gaming 2.0 Stream Now!",
-  mainHeading: "The Ultimate \n Stream gaming Toolkit+",
+  badgeText: "🚀 New Feature: Gaming 2.0 is Here!",
+  mainHeading: "The Ultimate \n Gaming Stream Toolkit+\n for Creators",
   subHeading:
-    "Optimize your streams, track real-time analytics, and engage your audience effortlessly—all in one place. Perfect for Twitch, YouTube, and Facebook streamers.",
+    "Optimize your streams, track real-time analytics, and engage your audience effortlessly—all in one place. Perfect for Twitch, YouTube, and trovo streamers.",
   callToAction: {
     primary: "Start Free Trial",
     secondary: "Request a Demo",
@@ -42,56 +44,59 @@ export const BRAND_LOGOS = [
   { src: TrovoLogo, alt: "Trovo" },
   { src: SteamLogo, alt: "Steam" },
   { src: TwitchLogo, alt: "Twitch" },
+  { src: youtube, alt: "YouTube" },
+  { src: tiktok, alt: "TikTok" },
 ];
 
 export const HOW_IT_WORKS_CONTENT = {
   sectionTitle: "How it works!",
   sectionDescription:
-    "Stream like a pro with our 6-step process. From setup to performance tracking, we've got everything you need to elevate your streaming experience.",
+    "Stream like a pro with our 6-step process. From setup to performance tracking — designed to help you stream smarter and grow faster.",
   steps: [
     {
-      title: "Set Up Your Streaming Environment",
+      title: "Choose Your Platform",
       description:
-        "Easily configure your streaming environment with our user-friendly tools. Connect to Twitch, YouTube, and more in minutes.",
+        "Connect your Twitch, YouTube, or Facebook Gaming account in just one click.",
       imageSrc: streamImage,
-      imageAlt: "Streaming Setup",
+      imageAlt: "Streaming Platforms",
+      platforms: [trovoStream, twitchStream, youtubeStream, tiktokStream],
     },
     {
-      title: "Engage with Your Audience",
+      title: "Add Overlays & Alerts",
       description:
-        "Interact with your audience in real-time through custom alerts, chat overlays, and live notifications.",
-      imageSrc: audienceEngagementImage,
-      imageAlt: "Audience Engagement",
-      users: [user1, user2, user3, user5],
+        "Install cool overlays, donation alerts, subscribers, and follow notifications for a more engaging stream.",
+      imageSrc: like,
+      imageAlt: "subscribe and like",
+      
     },
     {
-      title: "Track and Analyze Performance",
+      title: "Set Up Camera & Audio",
       description:
-        "Monitor your stream’s performance in real-time with detailed analytics and viewer engagement insights.",
-      imageSrc: chart,
-      imageAlt: "Performance Analytics",
+        "Adjust your webcam, microphone, and background to look more professional.",
+      imageSrc: streamGame,
+      imageAlt: "Setreaming",
     },
     {
-      title: "Optimize Your Stream Settings",
+      title: "Real-Time Interaction",
       description:
-        "Fine-tune your stream settings for optimal performance, ensuring smooth streams even during high traffic.",
-      imageSrc: optimize,
-      imageAlt: "Optimize Settings",
+        "Engage with your viewers through live chat, polls, or game requests instantly.",
+      imageSrc: chat,
+      imageAlt: "Interaction Viewers",
+    },
+    {
+      title: "Customize Your Channel",
+      description:
+        "Add banners, logos, and colors to match your gaming identity.",
+      imageSrc: banner,
+      imageAlt: "Logo Streaming Channel",
     },
     {
       title: "Monetize Your Streams",
       description:
-        "Unlock revenue streams by adding subscriptions, donations, and sponsorships to your stream.",
-      imageSrc: monetizeImage,
-      imageAlt: "Monetization",
-    },
-    {
-      title: "Automate Your Workflows",
-      description:
-        "Use advanced automation tools to manage your schedule, alerts, and promotions effortlessly.",
-      imageSrc: automationImage,
-      imageAlt: "Workflow Automation",
-    },
+        "Enable donations, subscriptions, and sponsorships to turn your passion into income.",
+      imageSrc: saweria,
+      imageAlt: "Subcribe and Like",
+    }, 
   ],
 };
 
@@ -194,55 +199,78 @@ export const PLANS_CONTENT = {
   ],
 };
 
-export const TESTIMONIALS_CONTENT = {
-  sectionTitle: "What Our Streamers Say",
+export const PLATFORM_TESTIMONIALS = {
+  sectionTitle: "Trusted by Top Streaming Platforms",
   sectionDescription:
-    "Hear from some of the top streamers who use Streamerzz to engage with their audience and grow their channels.",
+    "Major streaming platforms rely on Streamerzz to provide creators with the best tools for growth, engagement, and performance.",
   reviews: [
     {
-      name: "Alice Johnson",
-      title: "Content Creator",
+      name: "Twitch",
+      title: "Live Streaming Leader",
       review:
-        "Streamerzz has revolutionized the way we manage our content subscriptions. The intuitive dashboard and real-time analytics have made it easier to track our progress and optimize our offerings. Highly recommended!",
-      image: user1,
+        "Streamerzz integrates seamlessly with Twitch, providing creators with alerts, overlays, and analytics that enhance live interactions.",
+      image: twitchStream,
     },
     {
-      name: "Bob Smith",
-      title: "Marketing Specialist",
+      name: "YouTube Gaming",
+      title: "Global Video Platform",
       review:
-        "The team at Streamerzz has been fantastic! Their support is responsive and knowledgeable. The platform itself is versatile and has helped us streamline our subscription management, saving us time and increasing efficiency.",
-      image: user2,
+        "With Streamerzz, YouTube streamers get advanced customization and monetization tools that help grow their communities faster.",
+      image: youtubeStream,
     },
     {
-      name: "Carla Mendes",
-      title: "Product Manager",
+      name: "Trovo",
+      title: "Emerging Streaming Hub",
       review:
-        "Streamerzz's automated billing and comprehensive analytics have been game-changers for our product team. We can now easily track user engagement and make data-driven decisions to enhance our service offerings.",
-      image: user3,
+        "Streamerzz empowers Trovo creators with automation and engagement features that simplify stream management and boost visibility.",
+      image: trovoStream,
     },
     {
-      name: "David Lee",
-      title: "Customer Success Manager",
+      name: "TikTok Live",
+      title: "Short-Form Streaming Giant",
       review:
-        "Using Streamerzz, we’ve been able to increase our customer retention rates. The platform's user-friendly interface and powerful features have provided our customers with a seamless experience, leading to higher satisfaction.",
-      image: user4,
-    },
-    {
-      name: "Ella Fernandez",
-      title: "UX Designer",
-      review:
-        "Streamerzz's flexibility and ease of use have made it a key tool in our design process. We can quickly adjust our subscription plans and monitor the impact on user engagement, allowing for a more responsive approach.",
-      image: user5,
-    },
-    {
-      name: "Frank Wilson",
-      title: "Data Analyst",
-      review:
-        "Streamerzz provides us with detailed insights into our subscription metrics. The advanced reporting tools have enabled us to identify trends and make informed decisions to optimize our growth strategy.",
-      image: user6,
+        "By connecting with TikTok Live, Streamerzz enables real-time fan engagement and smooth stream optimization on mobile-first platforms.",
+      image: tiktokStream,
     },
   ],
 };
+
+export const STREAMER_TESTIMONIALS = {
+  sectionTitle: "What Gamers Say",
+  sectionDescription:
+    "Listen to top gaming streamers who use Streamerzz to build their audience, engage with fans, and level up their streaming careers.",
+  reviews: [
+    {
+      name: "ShadowHunterX",
+      title: "Twitch Partner",
+      review:
+        "Streamerzz completely changed my streaming game. The overlays, alerts, and analytics give me pro-level quality while keeping everything simple to manage.",
+      image: twitchStream,
+    },
+    {
+      name: "LunaPlays",
+      title: "YouTube Gaming Creator",
+      review:
+        "I love how easy it is to customize my stream layout and connect with viewers. My channel growth has doubled since I started using Streamerzz.",
+      image: youtubeStream,
+    },
+    {
+      name: "AceNova",
+      title: "Trovo Streamer",
+      review:
+        "The automation features are a lifesaver. From alerts to tracking donations, Streamerzz lets me focus more on gameplay and less on management.",
+      image: trovoStream,
+    },
+    {
+      name: "PixelRogue",
+      title: "TikTok Live Streamer",
+      review:
+        "Engagement went through the roof once I started with Streamerzz. The real-time interactions make my streams way more fun for my audience.",
+      image: tiktokStream,
+    },
+  ],
+};
+
 
 export const FOOTER_CONTENT = {
   sections: [

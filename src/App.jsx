@@ -1,6 +1,8 @@
 import Navbar from "./component/navbar";
 import HeroSection from "./component/HeroSection";
 import HowItWorks from "./component/Works";
+import Features from "./component/Features";
+import Pricing from "./component/Pricing";
 
 const App = () => {
   return (
@@ -8,6 +10,8 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <HowItWorks />
+      <Features/>
+      <Pricing/>
     </main>
   );
 }

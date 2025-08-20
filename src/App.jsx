@@ -4,6 +4,7 @@ import HowItWorks from "./component/Works";
 import Features from "./component/Features";
 import Pricing from "./component/Pricing";
 import StreamTesti from "./component/StreamTesti";
+import Footer from "./component/footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Features/>
       <Pricing/>
       <StreamTesti/>
+      <Footer/>
     </main>
   );
 }

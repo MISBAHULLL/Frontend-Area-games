@@ -43,17 +43,20 @@ const StreamTesti = () => {
                             <motion.div key={index}
                             custom={index}
                             variants={StreamTestiVariants}
-                            className="mt-10 flex fle-col items-center justify-center overflow-hidden rounded-2xl
-                            bg-neutral-900/50 border border-neutral-900 p-13">
+                            className="mt-10 flex flex-col items-center justify-center overflow-hidden rounded-2xl
+                            bg-neutral-900/50 border border-neutral-900 p-10">
                                 <p className="mb-4 text-neutral-200 text-justify tracking-wide">
                                     {review.review}
                                 </p>
                                 <div className="flex items-center mt-4">
                                     <img 
                                         src={review.image} 
-                                        alt={review.name}
-                                        className="w-12 h-12 rounded-full mr-4 object-cover"
+                                        alt={review.alt}
+                                        className="w-12 h-12 rounded-full mr-4"
                                     />
+                                    <div><p className="text-sm font-bold text-white">
+                                        {review.name}</p>
+                                        <p className="text-sm text-gray-500">{review.title}</p></div>
                                 </div>
                             </motion.div>
                         ))}

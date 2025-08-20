@@ -25,11 +25,7 @@ import usr6 from "../assets/usr6.jpg";
 
 
 import {
-  RiBarChart2Line,
-  RiSettings2Line,
   RiTeamLine,
-  RiTwitchLine,
-  RiYoutubeLine,
   RiCalendarLine,
 } from "@remixicon/react";
 
@@ -206,42 +202,6 @@ export const PLANS_CONTENT = {
   ],
 };
 
-export const PLATFORM_TESTIMONIALS = {
-  sectionTitle: "Trusted by Top Streaming Platforms",
-  sectionDescription:
-    "Major streaming platforms rely on Streamerzz to provide creators with the best tools for growth, engagement, and performance.",
-  reviews: [
-    {
-      name: "Twitch",
-      title: "Live Streaming Leader",
-      review:
-        "Streamerzz integrates seamlessly with Twitch, providing creators with alerts, overlays, and analytics that enhance live interactions.",
-      image: twitchStream,
-    },
-    {
-      name: "YouTube Gaming",
-      title: "Global Video Platform",
-      review:
-        "With Streamerzz, YouTube streamers get advanced customization and monetization tools that help grow their communities faster.",
-      image: youtubeStream,
-    },
-    {
-      name: "Trovo",
-      title: "Emerging Streaming Hub",
-      review:
-        "Streamerzz empowers Trovo creators with automation and engagement features that simplify stream management and boost visibility.",
-      image: trovoStream,
-    },
-    {
-      name: "TikTok Live",
-      title: "Short-Form Streaming Giant",
-      review:
-        "By connecting with TikTok Live, Streamerzz enables real-time fan engagement and smooth stream optimization on mobile-first platforms.",
-      image: tiktokStream,
-    },
-  ],
-};
-
 export const STREAMER_TESTIMONIALS = {
   sectionTitle: "What Gamers Say",
   sectionDescription:
@@ -252,28 +212,28 @@ export const STREAMER_TESTIMONIALS = {
       title: "Twitch Partner",
       review:
         "Streamerzz completely changed my streaming game. The overlays, alerts, and analytics give me pro-level quality while keeping everything simple to manage.",
-      // image: p,
+      image: usr5,
     },
     {
       name: "LunaPlays",
       title: "YouTube Gaming Creator",
       review:
         "I love how easy it is to customize my stream layout and connect with viewers. My channel growth has doubled since I started using Streamerzz.",
-      // image: p,
+      image: usr4,
     },
     {
       name: "AceNova",
       title: "Trovo Streamer",
       review:
         "The automation features are a lifesaver. From alerts to tracking donations, Streamerzz lets me focus more on gameplay and less on management.",
-      // image: p,
+      image: usr2,
     },
     {
       name: "PixelRogue",
       title: "TikTok Live Streamer",
       review:
         "Engagement went through the roof once I started with Streamerzz. The real-time interactions make my streams way more fun for my audience.",
-      // image: p,
+      image: usr3,
     },
   ],
 };
@@ -310,13 +270,11 @@ export const FOOTER_CONTENT = {
     {
       title: "CONNECT WITH US",
       links: [
-        { text: "Twitter", url: "#" },
-        { text: "Facebook", url: "#" },
-        { text: "TikTok", url: "#" },
+        {text: "Github", url: "#"},
+        {text: "Gmail", url: "#"},
+        {text: "Whatsapp", url: "#"},
         { text: "LinkedIn", url: "#" },
-        { text: "YouTube", url: "#" },
-        { text: "Twitch", url: "#" },
-        { text: "Discord", url: "#" },
+        { text: "Instagram", url: "#" },
       ],
     },
     {
@@ -333,6 +291,6 @@ export const FOOTER_CONTENT = {
     },
   ],
   platformsText:
-    "Streaming Platforms | Twitch | YouTube | Discord | Facebook Gaming",
+    "Streaming Platforms | Twitch | YouTube | Trovo | Tiktok",
   copyrightText: "© 2024 Streamerzz, Inc. All rights reserved.",
 };

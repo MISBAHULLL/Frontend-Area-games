@@ -156,7 +156,7 @@ export const KEY_FEATURES_CONTENT = {
 export const PLANS_CONTENT = {
   sectionTitle: "Choose Your Plan",
   sectionDescription:
-    "Streamerzz offers flexible pricing plans to fit every streamer’s needs, from beginner to pro.",
+    "Streamer offers flexible pricing plans to fit every streamer’s needs, from beginner to pro.",
   popularBadge: "Most Popular",
   ctaText: "Get Started",
   plans: [
@@ -211,28 +211,28 @@ export const STREAMER_TESTIMONIALS = {
       name: "ShadowHunterX",
       title: "Twitch Partner",
       review:
-        "Streamerzz completely changed my streaming game. The overlays, alerts, and analytics give me pro-level quality while keeping everything simple to manage.",
+        "Streamer completely changed my streaming game. The overlays, alerts, and analytics give me pro-level quality while keeping everything simple to manage.",
       image: usr5,
     },
     {
       name: "LunaPlays",
       title: "YouTube Gaming Creator",
       review:
-        "I love how easy it is to customize my stream layout and connect with viewers. My channel growth has doubled since I started using Streamerzz.",
+        "I love how easy it is to customize my stream layout and connect with viewers. My channel growth has doubled since I started using Streamer.",
       image: usr4,
     },
     {
       name: "AceNova",
       title: "Trovo Streamer",
       review:
-        "The automation features are a lifesaver. From alerts to tracking donations, Streamerzz lets me focus more on gameplay and less on management.",
+        "The automation features are a lifesaver. From alerts to tracking donations, Streamer lets me focus more on gameplay and less on management.",
       image: usr2,
     },
     {
       name: "PixelRogue",
       title: "TikTok Live Streamer",
       review:
-        "Engagement went through the roof once I started with Streamerzz. The real-time interactions make my streams way more fun for my audience.",
+        "Engagement went through the roof once I started with Streamer. The real-time interactions make my streams way more fun for my audience.",
       image: usr3,
     },
   ],

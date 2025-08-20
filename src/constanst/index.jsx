@@ -31,6 +31,18 @@ import {
   RiSettings2Line,
   RiTwitchLine,
   RiYoutubeLine,
+  RiCloseLine,
+  RiCheckLine,
+  RiGithubLine,
+  RiMailLine,
+  RiWhatsappLine,
+  RiLinkedinLine,
+  RiInstagramLine,
+  RiErrorWarningLine,
+  RiRefreshLine,
+  RiTwitterXLine,
+  RiFacebookLine,
+  RiLinkM,
 } from "@remixicon/react";
 
 export const HERO_CONTENT = {
@@ -209,34 +221,34 @@ export const PLANS_CONTENT = {
 export const STREAMER_TESTIMONIALS = {
   sectionTitle: "What Gamers Say",
   sectionDescription:
-    "Listen to top gaming streamers who use Streamerzz to build their audience, engage with fans, and level up their streaming careers.",
+    "Listen to top gaming streamers who use Area Games to build their audience, engage with fans, and level up their streaming careers.",
   reviews: [
     {
       name: "ShadowHunterX",
       title: "Twitch Partner",
       review:
-        "Streamer completely changed my streaming game. The overlays, alerts, and analytics give me pro-level quality while keeping everything simple to manage.",
+        "Area Games completely changed my streaming game. The overlays, alerts, and analytics give me pro-level quality while keeping everything simple to manage.",
       image: usr5,
     },
     {
       name: "LunaPlays",
       title: "YouTube Gaming Creator",
       review:
-        "I love how easy it is to customize my stream layout and connect with viewers. My channel growth has doubled since I started using Streamer.",
+        "I love how easy it is to customize my stream layout and connect with viewers. My channel growth has doubled since I started using Area Games.",
       image: usr4,
     },
     {
       name: "AceNova",
       title: "Trovo Streamer",
       review:
-        "The automation features are a lifesaver. From alerts to tracking donations, Streamer lets me focus more on gameplay and less on management.",
+        "The automation features are a lifesaver. From alerts to tracking donations, Area Games lets me focus more on gameplay and less on management.",
       image: usr2,
     },
     {
       name: "PixelRogue",
       title: "TikTok Live Streamer",
       review:
-        "Engagement went through the roof once I started with Streamer. The real-time interactions make my streams way more fun for my audience.",
+        "Engagement went through the roof once I started with Area Games. The real-time interactions make my streams way more fun for my audience.",
       image: usr3,
     },
   ],
@@ -294,7 +306,4 @@ export const FOOTER_CONTENT = {
       ],
     },
   ],
-  platformsText:
-    "Streaming Platforms | Twitch | YouTube | Trovo | Tiktok",
-  copyrightText: "© 2024 Streamerzz, Inc. All rights reserved.",
 };

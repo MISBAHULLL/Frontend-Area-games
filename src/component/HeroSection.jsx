@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import { BRAND_LOGOS, HERO_CONTENT } from "../constanst";
 import HeroSec from '../assets/HeroSec.png';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import Button from './Button';
+import Modal from './Modal';
+import TrialForm from './TrialForm';
+import DemoForm from './DemoForm';
 
 const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -18,6 +23,21 @@ const fadeIn = {
 }
 
 const HeroSection = () => {
+    const [isTrialModalOpen, setIsTrialModalOpen] = useState(false);
+    const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+
+    const handleTrialSubmit = (data) => {
+        console.log('Trial signup:', data);
+        // Here you would typically send data to your backend
+        alert('Free trial started! Check your email for next steps.');
+    };
+
+    const handleDemoSubmit = (data) => {
+        console.log('Demo request:', data);
+        // Here you would typically send data to your backend
+        alert('Demo request submitted! We\'ll contact you within 24 hours.');
+    };
+
     return (
         <motion.section
         variants={containerVariants}
@@ -32,8 +52,8 @@ const HeroSection = () => {
                 </motion.div>
                 <motion.h1 
                 variants={fadeInUp}
-                className="text-5xl lg:text-8xl my-5 font-semibold tracking-tighter leading-tight bg-gradient-to-b from-neutral-50 via-neutral-300
-                to-neutral-700 bg-clip-text text-transparent text-center overflow-visible">
+                className="text-5xl lg:text-8xl my-5 font-semibold tracking-tighter leading-tight bg-gradient-to-b from-slate-100 via-blue-200
+                to-cyan-400 bg-clip-text text-transparent text-center overflow-visible">
                     {HERO_CONTENT.mainHeading.split('\n').map((text, index) => (
                         <span key={index}>
                             {text}
@@ -47,14 +67,28 @@ const HeroSection = () => {
                     {HERO_CONTENT.subHeading}
                 </motion.p>
                 <motion.div 
-                variants={fadeInUp}
-                className="mt-6 flex flex-row gap-4 justify-center">
-                    <a href="#" className="inline-block bg-blue-600 hover:bg-blue-400 text-white py-3 px-6 rounded-lg font-medium">
+                    variants={fadeInUp}
+                    className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button
+                        variant="primary"
+                        size="lg"
+                        onClick={() => setIsTrialModalOpen(true)}
+                        className="min-w-[200px]"
+                        trackingName="start_trial_hero"
+                        trackingLocation="hero_section"
+                    >
                         {HERO_CONTENT.callToAction.primary}
-                    </a>
-                    <a href="#" className="inline-block border border-gray-500 hover:bg-gray-400 text-white py-3 px-6 rounded-lg font-medium">
+                    </Button>
+                    <Button
+                        variant="secondary"
+                        size="lg"
+                        onClick={() => setIsDemoModalOpen(true)}
+                        className="min-w-[200px]"
+                        trackingName="request_demo_hero"
+                        trackingLocation="hero_section"
+                    >
                         {HERO_CONTENT.callToAction.secondary}
-                    </a>
+                    </Button>
                 </motion.div>
                 <motion.div 
                 variants={fadeIn}
@@ -71,10 +105,34 @@ const HeroSection = () => {
                     </motion.div>
                 </motion.div>
                 <motion.div 
-                variants={fadeIn}className="-mt-40">
-                    <img src={HeroSec} alt="Streaming Broh" className="w-full h-auto mb-4"/>
+                    variants={fadeIn}
+                    className="mt-16 lg:-mt-20">
+                    <img src={HeroSec} alt="Streaming Dashboard" className="w-full h-auto mb-4 rounded-xl shadow-2xl"/>
                 </motion.div>
             </div>
+
+            {/* Modals */}
+            <Modal
+                isOpen={isTrialModalOpen}
+                onClose={() => setIsTrialModalOpen(false)}
+                title="Start Your Free Trial"
+            >
+                <TrialForm
+                    onClose={() => setIsTrialModalOpen(false)}
+                    onSubmit={handleTrialSubmit}
+                />
+            </Modal>
+
+            <Modal
+                isOpen={isDemoModalOpen}
+                onClose={() => setIsDemoModalOpen(false)}
+                title="Request a Demo"
+            >
+                <DemoForm
+                    onClose={() => setIsDemoModalOpen(false)}
+                    onSubmit={handleDemoSubmit}
+                />
+            </Modal>
         </motion.section>
     )
 }

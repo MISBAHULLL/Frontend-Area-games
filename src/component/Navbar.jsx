@@ -1,13 +1,37 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import Areas from '../assets/areas.png';
 import { RiCloseFill, RiMenu3Line } from '@remixicon/react';
+import Button from './Button';
+import Modal from './Modal';
+import TrialForm from './TrialForm';
+import DemoForm from './DemoForm';
 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isTrialModalOpen, setIsTrialModalOpen] = useState(false);
+    const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const smoothScroll = (targetId) => {
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setIsOpen(false); // Close mobile menu
+        }
+    };
+
+    const handleTrialSubmit = (data) => {
+        console.log('Trial signup:', data);
+        alert('Free trial started! Check your email for next steps.');
+    };
+
+    const handleDemoSubmit = (data) => {
+        console.log('Demo request:', data);
+        alert('Demo request submitted! We\'ll contact you within 24 hours.');
     };
     return (
         <>
@@ -16,24 +40,51 @@ const Navbar = () => {
                 flex justify-between items-center rounded-xl border border-neutral-800'>
                     <img src={Areas} width={60} height={15}/>
 
-                    {/* Left Button */}
+                    {/* Navigation Links */}
                     <div className='hidden md:flex space-x-6'>
-                        <a href='#works' className='hover:text-neutral-200' >
+                        <button 
+                            onClick={() => smoothScroll('works')} 
+                            className='hover:text-blue-400 transition-colors'
+                        >
                             How it works
-                        </a>
-                        <a href='#pricing' className='hover:text-neutral-200' >
+                        </button>
+                        <button 
+                            onClick={() => smoothScroll('features')} 
+                            className='hover:text-blue-400 transition-colors'
+                        >
+                            Features
+                        </button>
+                        <button 
+                            onClick={() => smoothScroll('pricing')} 
+                            className='hover:text-blue-400 transition-colors'
+                        >
                             Pricing
-                        </a>
-                        <a href='#testimonials' className='hover:text-neutral-200' >
+                        </button>
+                        <button 
+                            onClick={() => smoothScroll('testimonials')} 
+                            className='hover:text-blue-400 transition-colors'
+                        >
                             Testimonials
-                        </a>
+                        </button>
                     </div>
 
-                    {/* Right Button */}
-                    <div className='hidden md:flex space-x-4 items-center'>
-                        <a href="#" className='hover:text-neutral-200'>Login</a>
-                        <a href="#" className='border border-neutral-700 text-white py-2 px-2 rounded-lg hover:text-neutral-700 transition'>Get a demo</a>
-                        <a href="#" className='border bg-blue-600  text-white py-2 px-4 rounded-lg hover:bg-blue-400 transition'>Start Free Trial</a>
+                    {/* CTA Buttons */}
+                    <div className='hidden md:flex space-x-3 items-center'>
+                        <button className='text-neutral-400 hover:text-white transition-colors'>Login</button>
+                        <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => setIsDemoModalOpen(true)}
+                        >
+                            Get a Demo
+                        </Button>
+                        <Button
+                            variant="primary"
+                            size="sm"
+                            onClick={() => setIsTrialModalOpen(true)}
+                        >
+                            Start Free Trial
+                        </Button>
                     </div>
 
                     {/* Hamburger Menu Phone*/}
@@ -58,27 +109,89 @@ const Navbar = () => {
                         </div>
                         
                         {/* Menu items container with border */}
-                        <div className='mx-2 mt-8 bg-neutral-900/60 backdrop-blur-md border border-neutral-800 rounded-xl p-4'>
+                        <div className='mx-2 mt-8 bg-neutral-900/60 backdrop-blur-md border border-neutral-800 rounded-xl p-6'>
                             <div className='flex flex-col space-y-6'>
-                                <a href="#" className='text-neutral-200 text-lg'>Product</a>
-                                <a href="#" className='text-neutral-200 text-lg'>Pricing</a>
-                                <a href="#" className='text-neutral-200 text-lg'>Resources</a>
-                                <a href="#" className='text-neutral-200 text-lg'>Login</a>
+                                <button 
+                                    onClick={() => smoothScroll('works')} 
+                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                >
+                                    How it works
+                                </button>
+                                <button 
+                                    onClick={() => smoothScroll('features')} 
+                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                >
+                                    Features
+                                </button>
+                                <button 
+                                    onClick={() => smoothScroll('pricing')} 
+                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                >
+                                    Pricing
+                                </button>
+                                <button 
+                                    onClick={() => smoothScroll('testimonials')} 
+                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                >
+                                    Testimonials
+                                </button>
+                                <button className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'>
+                                    Login
+                                </button>
                                 
                                 {/* Buttons section */}
-                                <div className='pt-2 space-y-4'>
-                                    <a href="#" className='block text-center border border-neutral-700 text-white py-3 px-4 rounded-lg hover:bg-neutral-800 transition'>
+                                <div className='pt-4 space-y-3'>
+                                    <Button
+                                        variant="outline"
+                                        size="lg"
+                                        onClick={() => {
+                                            setIsDemoModalOpen(true);
+                                            setIsOpen(false);
+                                        }}
+                                        className="w-full"
+                                    >
                                         Get a Demo
-                                    </a>
-                                    <a href="#" className='block text-center bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-500 transition'>
+                                    </Button>
+                                    <Button
+                                        variant="primary"
+                                        size="lg"
+                                        onClick={() => {
+                                            setIsTrialModalOpen(true);
+                                            setIsOpen(false);
+                                        }}
+                                        className="w-full"
+                                    >
                                         Start Free Trial
-                                    </a>
+                                    </Button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             )}
+
+            {/* Modals */}
+            <Modal
+                isOpen={isTrialModalOpen}
+                onClose={() => setIsTrialModalOpen(false)}
+                title="Start Your Free Trial"
+            >
+                <TrialForm
+                    onClose={() => setIsTrialModalOpen(false)}
+                    onSubmit={handleTrialSubmit}
+                />
+            </Modal>
+
+            <Modal
+                isOpen={isDemoModalOpen}
+                onClose={() => setIsDemoModalOpen(false)}
+                title="Request a Demo"
+            >
+                <DemoForm
+                    onClose={() => setIsDemoModalOpen(false)}
+                    onSubmit={handleDemoSubmit}
+                />
+            </Modal>
         </>
     )
 }

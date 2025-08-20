@@ -52,8 +52,8 @@ const HeroSection = () => {
                 </motion.div>
                 <motion.h1 
                 variants={fadeInUp}
-                className="text-5xl lg:text-8xl my-5 font-semibold tracking-tighter leading-tight bg-gradient-to-b from-slate-100 via-blue-200
-                to-cyan-400 bg-clip-text text-transparent text-center overflow-visible">
+                className="text-5xl lg:text-8xl my-5 font-semibold tracking-tighter leading-tight bg-gradient-to-b from-slate-200 via-indigo-800
+                to-purple-700 bg-clip-text text-transparent text-center overflow-visible">
                     {HERO_CONTENT.mainHeading.split('\n').map((text, index) => (
                         <span key={index}>
                             {text}

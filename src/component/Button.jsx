@@ -15,9 +15,9 @@ const Button = ({
     const baseClasses = "font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed";
     
     const variants = {
-        primary: "bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-600 hover:to-emerald-700 text-white shadow-lg hover:shadow-teal-500/25 focus:ring-teal-500",
-        secondary: "border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white focus:ring-blue-500",
-        outline: "border-2 border-neutral-600 text-neutral-300 hover:border-blue-500 hover:text-blue-400 focus:ring-blue-500"
+        primary: "bg-gradient-to-r from-red-400 to-rose-400 hover:from-red-600 hover:to-rose-700 text-white shadow-lg hover:shadow-rose-500/25 focus:ring-rose-500",
+        secondary: "border-2 border-indigo-900 text-indigo-600 hover:bg-indigo-900 hover:text-white focus:ring-indigo-900",
+        outline: "border-2 border-neutral-600 text-neutral-300 hover:border-indigo-900 hover:text-indigo-600 focus:ring-indigo-900"
     };
     
     const sizes = {

@@ -66,7 +66,7 @@ const Footer = () => {
                 <div className="border-t border-neutral-800 py-8 mt-16">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="mb-4 md:mb-0">
-                            <h4 className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-emerald-500 bg-clip-text text-transparent">
+                            <h4 className="text-2xl font-bold bg-gradient-to-r from-red-400 to-rose-400 bg-clip-text text-transparent">
                                 Area Games
                             </h4>
                             <p className="text-neutral-400 text-sm mt-1">

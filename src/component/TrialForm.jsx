@@ -48,7 +48,7 @@ const TrialForm = ({ onClose, onSubmit }) => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white placeholder-neutral-400 focus:border-purple-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white placeholder-neutral-400 focus:border-rose-400 focus:outline-none transition-colors"
                     placeholder="Enter your full name"
                 />
             </div>
@@ -63,7 +63,7 @@ const TrialForm = ({ onClose, onSubmit }) => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white placeholder-neutral-400 focus:border-purple-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white placeholder-neutral-400 focus:border-rose-400 focus:outline-none transition-colors"
                     placeholder="Enter your email"
                 />
             </div>
@@ -76,7 +76,7 @@ const TrialForm = ({ onClose, onSubmit }) => {
                     name="platform"
                     value={formData.platform}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white focus:border-purple-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white focus:border-rose-400 focus:outline-none transition-colors"
                 >
                     <option value="">Select platform</option>
                     <option value="twitch">Twitch</option>
@@ -95,7 +95,7 @@ const TrialForm = ({ onClose, onSubmit }) => {
                     name="experience"
                     value={formData.experience}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white focus:border-purple-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white focus:border-rose-400 focus:outline-none transition-colors"
                 >
                     <option value="">Select experience level</option>
                     <option value="beginner">Beginner (0-6 months)</option>

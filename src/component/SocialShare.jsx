@@ -20,19 +20,19 @@ const SocialShare = ({
             name: 'Twitter',
             icon: RiTwitterXLine,
             url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
-            color: 'hover:bg-blue-500'
+            color: 'hover:bg-indigo-900'
         },
         {
             name: 'Facebook',
             icon: RiFacebookLine,
             url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
-            color: 'hover:bg-blue-600'
+            color: 'hover:bg-indigo-900'
         },
         {
             name: 'LinkedIn',
             icon: RiLinkedinLine,
             url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
-            color: 'hover:bg-blue-700'
+            color: 'hover:bg-indigo-900'
         },
         {
             name: 'WhatsApp',
@@ -93,7 +93,7 @@ const SocialShare = ({
                 
                 <motion.button
                     onClick={copyToClipboard}
-                    className="p-3 bg-neutral-800 border border-neutral-700 rounded-lg text-neutral-300 hover:bg-teal-500 hover:text-white hover:border-transparent transition-all duration-200"
+                    className="p-3 bg-neutral-800 border border-neutral-700 rounded-lg text-neutral-300 hover:bg-indigo-900 hover:text-white hover:border-transparent transition-all duration-200"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     title="Copy link"

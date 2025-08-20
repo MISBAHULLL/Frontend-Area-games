@@ -113,29 +113,29 @@ const Navbar = () => {
                             <div className='flex flex-col space-y-6'>
                                 <button 
                                     onClick={() => smoothScroll('works')} 
-                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                    className='text-neutral-200 text-lg text-left hover:indigo-purple-900  transition-colors'
                                 >
                                     How it works
                                 </button>
                                 <button 
                                     onClick={() => smoothScroll('features')} 
-                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                    className='text-neutral-200 text-lg text-left hover:indigo-purple-900  transition-colors'
                                 >
                                     Features
                                 </button>
                                 <button 
                                     onClick={() => smoothScroll('pricing')} 
-                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                    className='text-neutral-200 text-lg text-left hover:indigo-purple-900 transition-colors'
                                 >
                                     Pricing
                                 </button>
                                 <button 
                                     onClick={() => smoothScroll('testimonials')} 
-                                    className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'
+                                    className='text-neutral-200 text-lg text-left hover:indigo-purple-900  transition-colors'
                                 >
                                     Testimonials
                                 </button>
-                                <button className='text-neutral-200 text-lg text-left hover:text-purple-400 transition-colors'>
+                                <button className='text-neutral-200 text-lg text-left hover:indigo-purple-900  transition-colors'>
                                     Login
                                 </button>
                                 

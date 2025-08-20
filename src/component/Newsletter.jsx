@@ -29,9 +29,9 @@ const Newsletter = () => {
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="bg-gradient-to-r from-teal-900/20 to-emerald-900/20 border border-teal-500/30 rounded-xl p-8 text-center"
+                className="bg-gradient-to-r from-rose-400/20 to-pink-400/20 border border-red-400/30 rounded-xl p-8 text-center"
             >
-                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-red-400 rounded-full flex items-center justify-center mx-auto mb-4">
                     <RiMailLine className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">
@@ -45,7 +45,7 @@ const Newsletter = () => {
     }
 
     return (
-        <div className="bg-gradient-to-r from-teal-900/20 to-emerald-900/20 border border-teal-500/30 rounded-xl p-8">
+        <div className="bg-gradient-to-r from-rose-400/20 to-pink-400/20 border border-red-400/30 rounded-xl p-8">
             <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-white mb-2">
                     Stay Updated
@@ -62,7 +62,7 @@ const Newsletter = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email address"
-                        className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white placeholder-neutral-400 focus:border-teal-500 focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white placeholder-neutral-400 focus:border-rose-400 focus:outline-none transition-colors"
                         required
                     />
                 </div>

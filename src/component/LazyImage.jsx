@@ -72,7 +72,7 @@ const LazyImage = ({
             {!isLoaded && isInView && (
                 <div className="absolute inset-0 flex items-center justify-center bg-neutral-800">
                     <motion.div
-                        className="w-8 h-8 border-2 border-purple-500 border-t-transparent rounded-full"
+                        className="w-8 h-8 border-2 border-red-400 border-t-transparent rounded-full"
                         animate={{ rotate: 360 }}
                         transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                     />

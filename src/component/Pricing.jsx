@@ -24,7 +24,7 @@ const Pricing = () => {
         >
           <h2
             className="text-3xl lg:text-5xl mt-20 tracking-tighter bg-gradient-to-t 
-                    from-slate-100 via-blue-200 to-cyan-400 bg-clip-text text-transparent"
+                    from-slate-500 via-indigo-900 to-purple-800 bg-clip-text text-transparent"
           >
             {PLANS_CONTENT.sectionTitle}
           </h2>
@@ -50,13 +50,13 @@ const Pricing = () => {
               variants={PlanVariant}
               className={`relative p-8 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 ${
                 plan.popular
-                  ? "bg-gradient-to-b from-teal-900/20 to-neutral-900 border-2 border-teal-500/50 shadow-teal-500/20"
+                  ? "bg-gradient-to-b from-rose-400/20 to-neutral-900 border-2 border-red-400/50 shadow-pink-400/20"
                   : "bg-neutral-900/50 border border-neutral-700 hover:border-neutral-600"
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-teal-500 to-emerald-600 text-white text-xs py-2 px-4 rounded-full uppercase font-semibold shadow-lg">
+                  <span className="bg-gradient-to-r from-red-400 to-rose-400 text-white text-xs py-2 px-4 rounded-full uppercase font-semibold shadow-lg">
                     {PLANS_CONTENT.popularBadge}
                   </span>
                 </div>
@@ -74,7 +74,7 @@ const Pricing = () => {
                 <ul className="mb-8 space-y-3">
                     {plan.features.map((feature, i) =>(
                         <li key={i} className="flex items-center text-neutral-300">
-                            <RiCheckLine className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                            <RiCheckLine className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                             {feature}
                         </li>
                     ))}

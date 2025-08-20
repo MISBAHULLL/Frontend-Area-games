@@ -27,6 +27,10 @@ import usr6 from "../assets/usr6.jpg";
 import {
   RiTeamLine,
   RiCalendarLine,
+  RiBarChart2Line,
+  RiSettings2Line,
+  RiTwitchLine,
+  RiYoutubeLine,
 } from "@remixicon/react";
 
 export const HERO_CONTENT = {

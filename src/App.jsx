@@ -3,6 +3,7 @@ import HeroSection from "./component/HeroSection";
 import HowItWorks from "./component/Works";
 import Features from "./component/Features";
 import Pricing from "./component/Pricing";
+import StreamTesti from "./component/StreamTesti";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <HowItWorks />
       <Features/>
       <Pricing/>
+      <StreamTesti/>
     </main>
   );
 }

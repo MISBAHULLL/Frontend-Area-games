@@ -252,28 +252,28 @@ export const STREAMER_TESTIMONIALS = {
       title: "Twitch Partner",
       review:
         "Streamerzz completely changed my streaming game. The overlays, alerts, and analytics give me pro-level quality while keeping everything simple to manage.",
-      image: twitchStream,
+      // image: p,
     },
     {
       name: "LunaPlays",
       title: "YouTube Gaming Creator",
       review:
         "I love how easy it is to customize my stream layout and connect with viewers. My channel growth has doubled since I started using Streamerzz.",
-      image: youtubeStream,
+      // image: p,
     },
     {
       name: "AceNova",
       title: "Trovo Streamer",
       review:
         "The automation features are a lifesaver. From alerts to tracking donations, Streamerzz lets me focus more on gameplay and less on management.",
-      image: trovoStream,
+      // image: p,
     },
     {
       name: "PixelRogue",
       title: "TikTok Live Streamer",
       review:
         "Engagement went through the roof once I started with Streamerzz. The real-time interactions make my streams way more fun for my audience.",
-      image: tiktokStream,
+      // image: p,
     },
   ],
 };

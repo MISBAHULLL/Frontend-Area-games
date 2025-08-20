@@ -1,4 +1,3 @@
-import { map } from "framer-motion/client";
 import { STREAMER_TESTIMONIALS } from "../constanst";
 import {motion} from 'framer-motion';
 
@@ -43,10 +42,19 @@ const StreamTesti = () => {
                         {STREAMER_TESTIMONIALS.reviews.map((review, index) => (
                             <motion.div key={index}
                             custom={index}
-                            variants={{
-                                visible: {}
-                            }}>
-
+                            variants={StreamTestiVariants}
+                            className="mt-10 flex fle-col items-center justify-center overflow-hidden rounded-2xl
+                            bg-neutral-900/50 border border-neutral-900 p-13">
+                                <p className="mb-4 text-neutral-200 text-justify tracking-wide">
+                                    {review.review}
+                                </p>
+                                <div className="flex items-center mt-4">
+                                    <img 
+                                        src={review.image} 
+                                        alt={review.name}
+                                        className="w-12 h-12 rounded-full mr-4 object-cover"
+                                    />
+                                </div>
                             </motion.div>
                         ))}
                     </motion.div>

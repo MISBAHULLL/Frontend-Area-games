@@ -44,25 +44,25 @@ const Navbar = () => {
                     <div className='hidden md:flex space-x-6'>
                         <button 
                             onClick={() => smoothScroll('works')} 
-                            className='hover:text-blue-400 transition-colors'
+                            className='hover:text-blue-800 transition-colors'
                         >
                             How it works
                         </button>
                         <button 
                             onClick={() => smoothScroll('features')} 
-                            className='hover:text-blue-400 transition-colors'
+                            className='hover:text-blue-800 transition-colors'
                         >
                             Features
                         </button>
                         <button 
                             onClick={() => smoothScroll('pricing')} 
-                            className='hover:text-blue-400 transition-colors'
+                            className='hover:text-blue-800 transition-colors'
                         >
                             Pricing
                         </button>
                         <button 
                             onClick={() => smoothScroll('testimonials')} 
-                            className='hover:text-blue-400 transition-colors'
+                            className='hover:text-blue-800 transition-colors'
                         >
                             Testimonials
                         </button>

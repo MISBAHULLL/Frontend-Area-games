@@ -45,7 +45,7 @@ const Footer = () => {
                                             <li key={i}>
                                                 <a 
                                                     href={link.url} 
-                                                    className="flex items-center text-neutral-400 hover:text-teal-400 transition-colors duration-200 text-sm"
+                                                    className="flex items-center text-neutral-400 hover:text-red-400 transition-colors duration-200 text-sm"
                                                 >
                                                     {IconComponent && (
                                                         <IconComponent className="w-4 h-4 mr-2" />

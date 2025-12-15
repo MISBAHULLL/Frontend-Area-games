@@ -23,10 +23,10 @@ class Analytics {
         };
 
         this.events.push(event);
-        
+
         // Log to console for development
         console.log('Analytics Event:', event);
-        
+
         // Here you would typically send to your analytics service
         // Example: this.sendToAnalytics(event);
     }
@@ -72,7 +72,7 @@ class Analytics {
         if (typeof gtag !== 'undefined') {
             gtag('event', event.name, event.properties);
         }
-        
+
         // Example for custom analytics endpoint
         // fetch('/api/analytics', {
         //     method: 'POST',
@@ -103,7 +103,7 @@ window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = Math.round((scrollTop / docHeight) * 100);
-    
+
     if (scrollPercent > maxScrollDepth) {
         maxScrollDepth = scrollPercent;
         if (scrollPercent % 25 === 0) { // Track at 25%, 50%, 75%, 100%

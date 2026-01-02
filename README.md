@@ -1,18 +1,101 @@
-# React + Vite
+# Stream - Platform Streaming Multi-Channel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Platform streaming yang memungkinkan pengguna untuk melakukan streaming ke berbagai platform secara bersamaan seperti YouTube, Twitch, TikTok, dan platform lainnya.
 
-Currently, two official plugins are available:
+## 🚀 Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multi-Platform Streaming** - Stream ke berbagai platform sekaligus
+- **Dashboard Interaktif** - Kelola semua streaming dari satu tempat
+- **Real-time Analytics** - Monitor performa streaming secara real-time
+- **Responsive Design** - Optimized untuk desktop dan mobile
+- **Modern UI/UX** - Interface yang clean dan user-friendly
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 18 + Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Remix Icons
+- **Build Tool**: Vite
 
+## 📦 Instalasi
 
-== index.jsx==
-ini biasanya berisi bukan komponen react tetapi berisi kumpulan data statis(content) yang dipakai di website orang2 biasanya memisahkannya dan dibuat folder atau file baru yaitu content.js atau constant.js jadi index.jsx ini menyimpan semua data/isi website jadi kita tinggal import dari index.jsx untuk menggunakannya
+```bash
+# Clone repository
+git clone <repository-url>
+cd Stream
 
-icon diambil dari @remixicon/react
+# Install dependencies
+npm install
+
+# Jalankan development server
+npm run dev
+
+# Build untuk production
+npm run build
+```
+
+## 📁 Struktur Proyek
+
+```
+src/
+├── component/          # Komponen React
+│   ├── HeroSection.jsx # Landing page utama
+│   ├── Navbar.jsx      # Navigation bar
+│   ├── Features.jsx    # Fitur-fitur platform
+│   ├── Works.jsx       # How it works section
+│   ├── Pricing.jsx     # Paket harga
+│   └── Button.jsx      # Komponen button reusable
+├── constanst/          # Data statis dan konstanta
+│   └── index.jsx       # Semua content website
+├── assets/             # Gambar dan media
+└── utils/              # Utility functions
+```
+
+## 🎨 Komponen Utama
+
+### Button Component
+Komponen button dengan 3 variant:
+- `primary`: Gradient merah-rose untuk CTA utama
+- `secondary`: Border indigo untuk aksi sekunder
+- `outline`: Border neutral untuk aksi tambahan
+
+### Constants (index.jsx)
+File ini berisi semua data statis website seperti:
+- Hero content
+- Feature descriptions
+- Pricing plans
+- Testimonials
+- Brand logos
+
+### Icons
+Menggunakan `@remixicon/react` untuk semua ikon interface.
+
+## 🚀 Development
+
+```bash
+# Development mode
+npm run dev
+
+# Lint code
+npm run lint
+
+# Build production
+npm run build
+
+# Preview build
+npm run preview
+```
+
+## 📱 Responsive Design
+
+Website fully responsive dengan breakpoints:
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+![Responsive Design](Home.png)
+![platform](card.png)
+![Key](keyFeatures.png)
+![Plan](Plan.png)
+![Testimonials&Contact](Testi&contact.png)

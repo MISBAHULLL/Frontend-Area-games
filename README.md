@@ -87,6 +87,23 @@ npm run build
 npm run preview
 ```
 
+## 🌐 Deployment ke GitHub Pages
+
+```bash
+# Install gh-pages
+npm install --save-dev gh-pages
+
+# Deploy ke GitHub Pages
+npm run deploy
+```
+
+**Langkah-langkah deployment:**
+1. Push code ke GitHub repository
+2. Jalankan `npm run deploy`
+3. Aktifkan GitHub Pages di repository settings
+4. Pilih branch `gh-pages` sebagai source
+5. Website akan tersedia di: `https://username.github.io/Stream/`
+
 ## 📱 Responsive Design
 
 Website fully responsive dengan breakpoints:
